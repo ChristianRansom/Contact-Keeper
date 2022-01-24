@@ -27,6 +27,7 @@ export default (state, action) => {
       localStorage.removeItem("token");
       return {
         ...state,
+        loading: false,
         token: null,
         isAuthenticated: false,
         user: null,

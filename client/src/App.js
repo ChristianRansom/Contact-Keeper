@@ -28,12 +28,7 @@ const App = () => {
               <div className='container'>
                 <Alerts />
                 <Routes>
-                  <Route
-                    path='/'
-                    element={
-                      <PrivateRoute redirect='/login' element={<Home />} />
-                    }
-                  />
+                  <Route path='/' element={<PrivateRoute component={Home} />} />
                   <Route path='/about' element={<About />} />
                   <Route path='/login' element={<Login />} />
                   <Route path='/register' element={<Register />} />
