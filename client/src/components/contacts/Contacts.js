@@ -35,7 +35,7 @@ export const Contacts = () => {
             : contacts.map((contact) => (
                 <CSSTransition
                   key={contact._id}
-                  timeout={500}
+                  timeout={501}
                   classNames='item'
                 >
                   <ContactItem contact={contact}></ContactItem>
